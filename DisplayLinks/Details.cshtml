@@ -1,0 +1,70 @@
+﻿@model TheatreCMS.Models.DisplayLinks
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2 class="Display-title-details">Details</h2>
+
+<style>
+    p {text-indent:50px}
+</style>
+
+
+
+    <dl class="Display-linkspage-details Display-container-title-details">
+
+        <dt>
+
+        </dt>
+
+        <dd>
+            <center>
+                <h3>
+                    @Html.DisplayFor(model => model.Name)
+                </h3>
+            </center><hr />
+        </dd>
+
+        <dt>
+            <i>
+                @Html.DisplayNameFor(model => model.Text)
+            </i>
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Text)
+        </dd>
+
+        <dt>
+            <i>
+                @Html.DisplayNameFor(model => model.Link)
+            </i>
+        </dt>
+
+        <dd>
+                @Html.DisplayFor(model => model.Link)
+        </dd>
+
+    </dl>
+
+
+
+
+        <nav class="Display-container-title-details p-0 pt-3">
+
+            <button class="iconBtn">
+                <i class="fa fa-edit fa-fw"></i>Edit<!-- This button is a link to a different page-->
+            </button>
+
+
+
+
+
+            <button class="iconBtn">
+                <!-- This button is a link to a different page-->
+                <i class="fa fa-hand-point-left fa-fw"></i>Back To List<!-- This button is a link to a different page -->
+            </button>
+        </nav>
+
+    
